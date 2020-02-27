@@ -1,0 +1,49 @@
+@import '../defaults/colours';
+
+.default-button {
+    width: 100%;
+    padding: 5px 20px;
+    background: transparent;
+    border: 2px solid $spotify-white;
+    color: $spotify-white;
+    font-size: 1.25em;
+    margin: 0 auto;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+
+    &.small {
+        @extend .default-button;
+        font-size: 1em;
+    }
+
+    &.white {
+        @extend .default-button;
+        background: $spotify-white;
+        color: $spotify-black;
+        mix-blend-mode: screen;
+        
+        &:hover {
+            background: $spotify-black;
+            border-color: $spotify-white;
+            color: $spotify-white;
+        }
+    }
+
+    &.black {
+        @extend .default-button;
+        background: $spotify-black;
+        border-color: $spotify-black;
+        color: $spotify-white;
+        
+        &:hover {
+            background: $spotify-white;
+            color: $spotify-black;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        @extend .white;
+    }
+}
