@@ -1,0 +1,21 @@
+@import '../defaults/colours';
+
+.arrow-down {
+    line, polyline {
+        fill: none;
+        stroke: $spotify_white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 150px
+    }
+}
+
+.arrow-left {
+    line, polyline {
+        fill: none;
+        stroke: $spotify_white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 150px
+    }
+}
